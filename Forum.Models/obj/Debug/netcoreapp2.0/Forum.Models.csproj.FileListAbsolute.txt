@@ -1,0 +1,9 @@
+E:\GitHub Reps\forum-workshop\07. CSharp-OOP-Basics-Workshop-Skeleton\Forum.Models\bin\Debug\netcoreapp2.0\Forum.Models.deps.json
+E:\GitHub Reps\forum-workshop\07. CSharp-OOP-Basics-Workshop-Skeleton\Forum.Models\bin\Debug\netcoreapp2.0\Forum.Models.dll
+E:\GitHub Reps\forum-workshop\07. CSharp-OOP-Basics-Workshop-Skeleton\Forum.Models\bin\Debug\netcoreapp2.0\Forum.Models.pdb
+E:\GitHub Reps\forum-workshop\07. CSharp-OOP-Basics-Workshop-Skeleton\Forum.Models\obj\Debug\netcoreapp2.0\Forum.Models.csprojAssemblyReference.cache
+E:\GitHub Reps\forum-workshop\07. CSharp-OOP-Basics-Workshop-Skeleton\Forum.Models\obj\Debug\netcoreapp2.0\Forum.Models.csproj.CoreCompileInputs.cache
+E:\GitHub Reps\forum-workshop\07. CSharp-OOP-Basics-Workshop-Skeleton\Forum.Models\obj\Debug\netcoreapp2.0\Forum.Models.AssemblyInfoInputs.cache
+E:\GitHub Reps\forum-workshop\07. CSharp-OOP-Basics-Workshop-Skeleton\Forum.Models\obj\Debug\netcoreapp2.0\Forum.Models.AssemblyInfo.cs
+E:\GitHub Reps\forum-workshop\07. CSharp-OOP-Basics-Workshop-Skeleton\Forum.Models\obj\Debug\netcoreapp2.0\Forum.Models.dll
+E:\GitHub Reps\forum-workshop\07. CSharp-OOP-Basics-Workshop-Skeleton\Forum.Models\obj\Debug\netcoreapp2.0\Forum.Models.pdb

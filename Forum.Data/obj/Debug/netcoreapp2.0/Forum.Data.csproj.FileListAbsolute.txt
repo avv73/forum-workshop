@@ -1,0 +1,28 @@
+E:\GitHub Reps\forum-workshop\Forum.Data\bin\Debug\netcoreapp2.0\Forum.Data.deps.json
+E:\GitHub Reps\forum-workshop\Forum.Data\bin\Debug\netcoreapp2.0\Forum.Data.runtimeconfig.json
+E:\GitHub Reps\forum-workshop\Forum.Data\bin\Debug\netcoreapp2.0\Forum.Data.runtimeconfig.dev.json
+E:\GitHub Reps\forum-workshop\Forum.Data\bin\Debug\netcoreapp2.0\Forum.Data.dll
+E:\GitHub Reps\forum-workshop\Forum.Data\bin\Debug\netcoreapp2.0\Forum.Data.pdb
+E:\GitHub Reps\forum-workshop\Forum.Data\bin\Debug\netcoreapp2.0\Forum.Models.dll
+E:\GitHub Reps\forum-workshop\Forum.Data\bin\Debug\netcoreapp2.0\Forum.Models.pdb
+E:\GitHub Reps\forum-workshop\Forum.Data\obj\Debug\netcoreapp2.0\Forum.Data.csprojAssemblyReference.cache
+E:\GitHub Reps\forum-workshop\Forum.Data\obj\Debug\netcoreapp2.0\Forum.Data.csproj.CoreCompileInputs.cache
+E:\GitHub Reps\forum-workshop\Forum.Data\obj\Debug\netcoreapp2.0\Forum.Data.AssemblyInfoInputs.cache
+E:\GitHub Reps\forum-workshop\Forum.Data\obj\Debug\netcoreapp2.0\Forum.Data.AssemblyInfo.cs
+E:\GitHub Reps\forum-workshop\Forum.Data\obj\Debug\netcoreapp2.0\Forum.Data.csproj.CopyComplete
+E:\GitHub Reps\forum-workshop\Forum.Data\obj\Debug\netcoreapp2.0\Forum.Data.dll
+E:\GitHub Reps\forum-workshop\Forum.Data\obj\Debug\netcoreapp2.0\Forum.Data.pdb
+E:\GitHub Reps\forum-workshop\07. CSharp-OOP-Basics-Workshop-Skeleton\Forum.Data\bin\Debug\netcoreapp2.0\Forum.Data.deps.json
+E:\GitHub Reps\forum-workshop\07. CSharp-OOP-Basics-Workshop-Skeleton\Forum.Data\bin\Debug\netcoreapp2.0\Forum.Data.runtimeconfig.json
+E:\GitHub Reps\forum-workshop\07. CSharp-OOP-Basics-Workshop-Skeleton\Forum.Data\bin\Debug\netcoreapp2.0\Forum.Data.runtimeconfig.dev.json
+E:\GitHub Reps\forum-workshop\07. CSharp-OOP-Basics-Workshop-Skeleton\Forum.Data\bin\Debug\netcoreapp2.0\Forum.Data.dll
+E:\GitHub Reps\forum-workshop\07. CSharp-OOP-Basics-Workshop-Skeleton\Forum.Data\bin\Debug\netcoreapp2.0\Forum.Data.pdb
+E:\GitHub Reps\forum-workshop\07. CSharp-OOP-Basics-Workshop-Skeleton\Forum.Data\bin\Debug\netcoreapp2.0\Forum.Models.dll
+E:\GitHub Reps\forum-workshop\07. CSharp-OOP-Basics-Workshop-Skeleton\Forum.Data\bin\Debug\netcoreapp2.0\Forum.Models.pdb
+E:\GitHub Reps\forum-workshop\07. CSharp-OOP-Basics-Workshop-Skeleton\Forum.Data\obj\Debug\netcoreapp2.0\Forum.Data.csprojAssemblyReference.cache
+E:\GitHub Reps\forum-workshop\07. CSharp-OOP-Basics-Workshop-Skeleton\Forum.Data\obj\Debug\netcoreapp2.0\Forum.Data.csproj.CoreCompileInputs.cache
+E:\GitHub Reps\forum-workshop\07. CSharp-OOP-Basics-Workshop-Skeleton\Forum.Data\obj\Debug\netcoreapp2.0\Forum.Data.AssemblyInfoInputs.cache
+E:\GitHub Reps\forum-workshop\07. CSharp-OOP-Basics-Workshop-Skeleton\Forum.Data\obj\Debug\netcoreapp2.0\Forum.Data.AssemblyInfo.cs
+E:\GitHub Reps\forum-workshop\07. CSharp-OOP-Basics-Workshop-Skeleton\Forum.Data\obj\Debug\netcoreapp2.0\Forum.Data.csproj.CopyComplete
+E:\GitHub Reps\forum-workshop\07. CSharp-OOP-Basics-Workshop-Skeleton\Forum.Data\obj\Debug\netcoreapp2.0\Forum.Data.dll
+E:\GitHub Reps\forum-workshop\07. CSharp-OOP-Basics-Workshop-Skeleton\Forum.Data\obj\Debug\netcoreapp2.0\Forum.Data.pdb

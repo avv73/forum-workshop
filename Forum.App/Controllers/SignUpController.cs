@@ -2,6 +2,7 @@
 {
 	using Forum.App;
 	using Forum.App.Controllers.Contracts;
+    using Forum.App.Services;
     using Forum.App.UserInterface;
     using Forum.App.UserInterface.Contracts;
 
@@ -37,8 +38,21 @@
                     this.ReadPassword();
                     return MenuState.Signup;
                 case Command.SignUp:
-                    //TODO: Try sign up
-                    return MenuState.Error;
+                    SignUpStatus signUp = UserService.TrySignUpUser(this.Username, this.Password);
+
+                    switch (signUp)
+                    {
+                        case SignUpStatus.Success:
+                            return MenuState.SuccessfulLogIn;
+                        case SignUpStatus.DetailsError:
+                            this.ErrorMessage = DETAILS_ERROR;
+                            return MenuState.Error;
+                        case SignUpStatus.UsernameTakenError:
+                            this.ErrorMessage = USERNAME_TAKEN_ERROR;
+                            return MenuState.Error;
+                    }
+
+                    break;
                 case Command.Back:
                     this.ResetSignUp();
                     return MenuState.Back;

@@ -9,3 +9,8 @@ E:\GitHub Reps\forum-workshop\Forum.App\obj\Debug\netcoreapp2.0\Forum.App.Assemb
 E:\GitHub Reps\forum-workshop\Forum.App\obj\Debug\netcoreapp2.0\Forum.App.AssemblyInfo.cs
 E:\GitHub Reps\forum-workshop\Forum.App\obj\Debug\netcoreapp2.0\Forum.App.dll
 E:\GitHub Reps\forum-workshop\Forum.App\obj\Debug\netcoreapp2.0\Forum.App.pdb
+E:\GitHub Reps\forum-workshop\Forum.App\bin\Debug\netcoreapp2.0\Forum.Data.dll
+E:\GitHub Reps\forum-workshop\Forum.App\bin\Debug\netcoreapp2.0\Forum.Models.dll
+E:\GitHub Reps\forum-workshop\Forum.App\bin\Debug\netcoreapp2.0\Forum.Data.pdb
+E:\GitHub Reps\forum-workshop\Forum.App\bin\Debug\netcoreapp2.0\Forum.Models.pdb
+E:\GitHub Reps\forum-workshop\Forum.App\obj\Debug\netcoreapp2.0\Forum.App.csproj.CopyComplete

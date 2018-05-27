@@ -71,12 +71,12 @@ namespace Forum.Data
                 int id = int.Parse(args[0]);
                 string name = args[1];
                 string password = args[2];
-                int[] postIds = args[3]
-                    .Split(',', System.StringSplitOptions.RemoveEmptyEntries)
-                    .Select(int.Parse)
-                    .ToArray();
+                //int[] postIds = args[3]
+                //    .Split(',', System.StringSplitOptions.RemoveEmptyEntries)
+                //    .Select(int.Parse)
+                //    .ToArray();
 
-                User user = new User(id, name, password, postIds);
+                User user = new User(id, name, password);
                 users.Add(user);
             }
 

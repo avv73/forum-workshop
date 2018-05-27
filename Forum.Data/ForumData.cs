@@ -4,7 +4,7 @@ namespace Forum.Data
 {
     using Forum.Models;
 
-    class ForumData
+    public class ForumData
 	{
         public ForumData()
         {

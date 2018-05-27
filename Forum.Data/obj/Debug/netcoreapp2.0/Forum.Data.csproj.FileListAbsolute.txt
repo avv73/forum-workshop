@@ -1,6 +1,4 @@
 E:\GitHub Reps\forum-workshop\Forum.Data\bin\Debug\netcoreapp2.0\Forum.Data.deps.json
-E:\GitHub Reps\forum-workshop\Forum.Data\bin\Debug\netcoreapp2.0\Forum.Data.runtimeconfig.json
-E:\GitHub Reps\forum-workshop\Forum.Data\bin\Debug\netcoreapp2.0\Forum.Data.runtimeconfig.dev.json
 E:\GitHub Reps\forum-workshop\Forum.Data\bin\Debug\netcoreapp2.0\Forum.Data.dll
 E:\GitHub Reps\forum-workshop\Forum.Data\bin\Debug\netcoreapp2.0\Forum.Data.pdb
 E:\GitHub Reps\forum-workshop\Forum.Data\bin\Debug\netcoreapp2.0\Forum.Models.dll

@@ -46,5 +46,25 @@ namespace Forum.App.Services
 
             return allCategories;
         }
+
+        internal static IEnumerable<Post> GetPostsByCategory(int categoryId)
+        {
+            ForumData forumData = new ForumData();
+            // easier?
+            IEnumerable<int> postIds = forumData.Categories.First(c => c.Id == categoryId).Posts;
+
+            IEnumerable<Post> filteredPosts = forumData.Posts.Where(p => postIds.Contains(p.Id));
+            return filteredPosts;
+        }
+
+        internal static PostViewModel GetPostViewModel(int postId)
+        {
+            ForumData forumData = new ForumData();
+
+            Post post = forumData.Posts.Find(p => p.Id == postId);
+
+            PostViewModel pvm = new PostViewModel(post);
+            return pvm;
+        }
 	}
 }

@@ -5,6 +5,7 @@
     using Forum.App.Controllers.Contracts;
     using Forum.App.Services;
     using Forum.App.UserInterface.Contracts;
+    using Forum.App.Views;
 
     public class CategoriesController : IController, IPaginationController
     {
@@ -25,11 +26,7 @@
             this.LoadCategories();
         }
 
-        public int CurrentPage
-        {
-            get;
-            set;
-        }
+        public int CurrentPage { get; set; }
 
         private string[] AllCategoryNames { get; set; }
 

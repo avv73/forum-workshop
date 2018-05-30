@@ -194,7 +194,18 @@
 
         private void AddPost()
         {
-            throw new NotImplementedException();
+            AddPostController addPostController = (AddPostController)this.CurrentController;
+
+            int postId = addPostController.Post.PostId;
+
+            PostDetailsController postViewer = (PostDetailsController)this.controllers[(int)MenuState.ViewPost];
+            postViewer.SetPostId(postId);
+
+            addPostController.ResetPost();
+
+            this.controllerHistory.Pop();
+
+            this.RedirectToMenu(MenuState.ViewPost);
         }
 
         private void RenderCurrentView()

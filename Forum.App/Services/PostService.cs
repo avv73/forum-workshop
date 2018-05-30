@@ -66,5 +66,53 @@ namespace Forum.App.Services
             PostViewModel pvm = new PostViewModel(post);
             return pvm;
         }
+
+        internal static bool TrySavePost(PostViewModel postView)
+        {
+            bool emptyCategory = string.IsNullOrWhiteSpace(postView.Category);
+            bool emptyTitle = string.IsNullOrWhiteSpace(postView.Title);
+            bool emptyContent = !postView.Content.Any();
+
+            if (emptyCategory || emptyTitle || emptyContent)
+            {
+                return false;
+            }
+
+            ForumData forumData = new ForumData();
+
+            Category category = EnsureCategory(postView, forumData);
+
+            int postId = forumData.Posts.Any() ? forumData.Posts.Last().Id + 1 : 1;
+
+            User author = UserService.GetUser(postView.Author);
+
+            int authorId = author.Id;
+            string content = string.Join("", postView.Content);
+
+            Post post = new Post(postId, postView.Title, content, category.Id, author.Id);
+
+            forumData.Posts.Add(post);
+            author.PostIds.Add(post.Id);
+            category.Posts.Add(post.Id);
+            forumData.SaveChanges();
+
+            postView.PostId = postId;
+            return true;
+        }
+
+        private static Category EnsureCategory(PostViewModel postView, ForumData forumData)
+        {
+            string categoryName = postView.Category;
+            Category category = forumData.Categories.FirstOrDefault(x => x.Name == categoryName);
+            if (category == null)
+            {
+                List<Category> categories = forumData.Categories;
+                int categoryId = categories.Any() ? categories.Last().Id + 1 : 1;
+                category = new Category(categoryId, categoryName, new List<int>());
+                forumData.Categories.Add(category);
+            }
+
+            return category;
+        }
 	}
 }

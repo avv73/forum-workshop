@@ -22,10 +22,10 @@
 
         private enum Command
         {
-            Back = 0,
-            ViewPost = 1,
-            PreviousPage = 11,
-            NextPage = 12
+            Back,
+            ViewPost,
+            PreviousPage,
+            NextPage
         }
 
         public int CurrentPage { get; set; }
@@ -52,10 +52,10 @@
                     return MenuState.ViewPost;
                 case Command.PreviousPage:
 
-                    return MenuState.OpenCategory;
+                    return MenuState.ViewPost;
                 case Command.NextPage:
 
-                    return MenuState.OpenCategory;
+                    return MenuState.ViewPost;
             }
 
             throw new InvalidCommandException();

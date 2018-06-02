@@ -84,7 +84,7 @@ namespace Forum.App.Services
 
             int postId = forumData.Posts.Any() ? forumData.Posts.Last().Id + 1 : 1;
 
-            User author = UserService.GetUser(postView.Author);
+            User author = UserService.GetUser(postView.Author, forumData);
 
             int authorId = author.Id;
             string content = string.Join("", postView.Content);
@@ -92,11 +92,36 @@ namespace Forum.App.Services
             Post post = new Post(postId, postView.Title, content, category.Id, author.Id);
 
             forumData.Posts.Add(post);
-            author.PostIds.Add(post.Id);
-            category.Posts.Add(post.Id);
+            author.Posts.Add(postId);
+            category.Posts.Add(postId);
             forumData.SaveChanges();
 
             postView.PostId = postId;
+            return true;
+        }
+
+        internal static bool TrySaveReply(ReplyViewModel replyView, int postId)
+        {
+            if (!replyView.Content.Any())
+            {
+                return false;
+            }
+
+            ForumData forumData = new ForumData();
+
+            User author = UserService.GetUser(replyView.Author, forumData);
+            Post post = forumData.Posts.Find(p => p.Id == postId);
+
+            int authorId = author.Id;
+            string content = string.Join("", replyView.Content);
+
+            int replyId = forumData.Replies.Any() ? forumData.Replies.Last().Id + 1 : 1;
+
+            Reply reply = new Reply(replyId, content, authorId, postId);
+            
+            forumData.Replies.Add(reply);
+            post.ReplyIds.Add(replyId);
+            forumData.SaveChanges();
             return true;
         }
 

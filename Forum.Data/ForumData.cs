@@ -2,6 +2,7 @@
 
 namespace Forum.Data
 {
+    using System;
     using Forum.Models;
 
     public class ForumData
@@ -30,5 +31,9 @@ namespace Forum.Data
             DataMapper.SaveCategories(this.Categories);
         }
 
+        public void First()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

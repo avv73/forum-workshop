@@ -9,13 +9,13 @@ namespace Forum.Models
             this.Id = id;
             this.UserName = userName;
             this.Password = password;
-            this.PostIds = new List<int>();
+            this.Posts = new List<int>();
         }
 
         public User(int id, string userName, string password, IEnumerable<int> postIds)
             : this (id, userName, password)
         {
-            this.PostIds = new List<int>(postIds);
+            this.Posts = new List<int>(postIds);
         }
 
         public int Id { get; set; }
@@ -24,7 +24,7 @@ namespace Forum.Models
 
         public string Password { get; set; }
 
-        public ICollection<int> PostIds { get; set; }
+        public ICollection<int> Posts { get; set; }
     } 
 }
 

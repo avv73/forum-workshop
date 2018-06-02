@@ -138,12 +138,16 @@
 
         private void AddReply()
         {
-            throw new NotImplementedException();
+            this.Back(); 
         }
 
         private void RedirectToAddReply()
         {
-            throw new NotImplementedException();
+            PostDetailsController postDetailsController = (PostDetailsController)this.CurrentController;
+            AddReplyController addReplyController = (AddReplyController)this.controllers[(int)MenuState.AddReply];
+            addReplyController.SetPostId(postDetailsController.PostId);
+            this.RedirectToMenu(MenuState.AddReply);
+
         }
 
         private void LogOut()

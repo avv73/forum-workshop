@@ -57,10 +57,8 @@ namespace Forum.App.Services
             return user;
         }
 
-        internal static User GetUser(string username)
+        internal static User GetUser(string username, ForumData forumData)
         {
-            ForumData forumData = new ForumData();
-
             User user = forumData.Users.Find(u => u.UserName == username);
 
             return user;

@@ -29,13 +29,23 @@ namespace Forum.Data
                 string[] args = line.Split(";", System.StringSplitOptions.RemoveEmptyEntries);
                 int id = int.Parse(args[0]);
                 string name = args[1];
-                int[] postIds = args[2]
-                    .Split(',', System.StringSplitOptions.RemoveEmptyEntries)
-                    .Select(int.Parse)
-                    .ToArray();
 
-                Category category = new Category(id, name, postIds);
-                categories.Add(category);
+                if (args.Length == 3)
+                {
+                    int[] postIds = args[2]
+                        .Split(',', System.StringSplitOptions.RemoveEmptyEntries)
+                        .Select(int.Parse)
+                        .ToArray();
+
+                    Category category = new Category(id, name, postIds);
+                    categories.Add(category);
+                }
+                else
+                {
+                    Category category = new Category(id, name);
+                    categories.Add(category);
+                }
+
             }
 
             return categories;
@@ -71,13 +81,22 @@ namespace Forum.Data
                 int id = int.Parse(args[0]);
                 string name = args[1];
                 string password = args[2];
-                //int[] postIds = args[3]
-                //    .Split(',', System.StringSplitOptions.RemoveEmptyEntries)
-                //    .Select(int.Parse)
-                //    .ToArray();
 
-                User user = new User(id, name, password);
-                users.Add(user);
+                if (args.Length == 4)
+                {
+                    int[] postIds = args[3]
+                        .Split(',', System.StringSplitOptions.RemoveEmptyEntries)
+                        .Select(int.Parse)
+                        .ToArray();
+                    User user = new User(id, name, password, postIds);
+                    users.Add(user);
+                }
+                else
+                {
+                    User user = new User(id, name, password);
+                    users.Add(user);
+                }
+
             }
 
             return users;
@@ -94,7 +113,7 @@ namespace Forum.Data
                     user.Id,
                     user.UserName,
                     user.Password,
-                    string.Join(",", user.PostIds)
+                    string.Join(",", user.Posts)
                     );
 
                 lines.Add(line);
@@ -116,13 +135,21 @@ namespace Forum.Data
                 string content = args[2];
                 int categoryId = int.Parse(args[3]);
                 int authorId = int.Parse(args[4]);  
-                int[] replyIds = args[5]
-                    .Split(',', System.StringSplitOptions.RemoveEmptyEntries)
-                    .Select(int.Parse)
-                    .ToArray();
+                if (args.Length == 6)
+                {
 
-                Post post = new Post(id, title, content, categoryId, authorId, replyIds);
-                posts.Add(post);
+                    int[] replyIds = args[5]
+                        .Split(',', System.StringSplitOptions.RemoveEmptyEntries)
+                        .Select(int.Parse)
+                        .ToArray();
+                    Post post = new Post(id, title, content, categoryId, authorId, replyIds);
+                    posts.Add(post);
+                }
+                else
+                {
+                    Post post = new Post(id, title, content, categoryId, authorId);
+                    posts.Add(post);
+                }
             }
 
             return posts;

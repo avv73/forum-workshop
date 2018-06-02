@@ -13,7 +13,7 @@ namespace Forum.Models
 
         public Category(int id, string name, IEnumerable<int> posts) : this(id, name)
         {
-            this.Posts = new List<int>();
+            this.Posts = new List<int>(posts);
         }
 
         public int Id { get; set; }
